@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cn } from "@/lib/utils";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -26,7 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${cn('min-h-screen bg-background font-sans antialiased',
+          geistMono.variable,
+          geistSans.variable)}
+          `}
       >
         {children}
       </body>
