@@ -1,11 +1,21 @@
-
 import { CardsResult } from "@/components/cardsResult";
-import Image from "next/image";
+import { ChartGraph } from "@/components/chartGraph";
 
 export default function Home() {
   return (
-    <div className="sm:ml-14 p-4">
-      <CardsResult />
-    </div>
+    <>
+      <div className="sm:ml-14 p-4">
+        <CardsResult />
+      </div>
+
+      <div className="sm:ml-14 p-4">
+      <ChartGraph/>
+      </div>
+      
+      
+
+    </>
+
+
   );
 }
